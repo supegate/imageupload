@@ -1,0 +1,11 @@
+*.pyc
+*.jpeg
+*_
+__pycache__
+db.sqlite3
+/static
+/static2
+/staticfiles
+/uploads
+.DS_Store
+
