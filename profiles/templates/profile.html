@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>{{ user.username }} profile page</h1>
+
+<ul>
+{% for photo in user.photo_set.all %}
+   <li><img src="{{photo.image.url}}" /></li>
+{% empty %}
+   <li>No posting image.</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
+
